@@ -23,7 +23,7 @@ export default function Chat() {
     let botIndex = null;
 
     try {
-      const response = await fetch("http://localhost:5000/message/answer", {
+      const response = await fetch("https://ovaisgpt-server.vercel.app/message/answer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: input }),
